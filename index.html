@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<meta charset = "UTF-8">
+		<title>Bitwise operations with string!</title>
+		<script language = "javascript" type = "text/javascript" src = "operator.js"></script>
+	</head>
+	
+	<body>
+	
+		<h3>NOTE:</h3> 
+		<ul>
+		<li>Please insert (positive/negative)decimal numbers into the text box as values.</li> 
+		<br>
+		<li>Please use only the first text box for the "~" operator.</li> 
+		<br>
+		<li>The system identifies the input numbers as strings.</li> 
+		<br>
+		<li>To understand what internally happens please visit the wiki or/and analyse the "operator.js" file.</li> 
+		<br> 
+	
+		<h2>Bitwise arithmetic</h2>
+		
+		<input type = "text" id = "BA_operand_one">		
+		<select id = "BA_operators">
+		
+			<option> ~ </option>
+			<option> & </option>
+			<option> ^ </option>
+			<option> | </option>
+			
+		</select>		
+		<input type = "text" id = "BA_operand_two">
+		=
+		<span id = "BA_result">None</span>
+		
+		<br>
+		<br>
+		<button type = "button" onclick = "bitwise()">Calculate</button>		
+		<br>
+		<br>
+		
+		
+		<h2>Shift</h2>
+		
+		<input type = "text" id = "SH_operand_one">		
+		<select id = "SH_operators">
+		
+			<option> <<  </option>
+			<option> >>  </option>
+			<option> >>> </option>
+			
+		</select>		
+		<input type = "text" id = "SH_operand_two">
+		=
+		<span id = "SH_result">None</span>
+		
+		<br>
+		<br>
+		<button type = "button" onclick = "shift()">Calculate</button>
+	
+		<br>
+		<br>
+		For more explanation please visit - 
+		<a href = "https://github.com/Incrementis/Javascript-bitwise-operations-with-string-inputs-/wiki"> bitwise operation with string Wiki
+		
+	</body>
+
+</html>

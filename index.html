@@ -9,61 +9,83 @@
 	
 	<body>
 	
-		<h3>NOTE:</h3> 
-		<ul>
-		<li>Please insert (positive/negative)decimal numbers into the text box as values.</li> 
-		<br>
-		<li>Please use only the first text box for the "~" operator.</li> 
-		<br>
-		<li>The system identifies the input numbers as strings.</li> 
-		<br>
-		<li>To understand what internally happens please visit the wiki or/and analyse the "operator.js" file.</li> 
-		<br> 
-	
-		<h2>Bitwise arithmetic</h2>
+		<center>
 		
-		<input type = "text" id = "BA_operand_one">		
-		<select id = "BA_operators">
-		
-			<option> ~ </option>
-			<option> & </option>
-			<option> ^ </option>
-			<option> | </option>
+			<h3>NOTE:</h3> 
 			
-		</select>		
-		<input type = "text" id = "BA_operand_two">
-		=
-		<span id = "BA_result">None</span>
-		
-		<br>
-		<br>
-		<button type = "button" onclick = "bitwise()">Calculate</button>		
-		<br>
-		<br>
-		
-		
-		<h2>Shift</h2>
-		
-		<input type = "text" id = "SH_operand_one">		
-		<select id = "SH_operators">
-		
-			<option> <<  </option>
-			<option> >>  </option>
-			<option> >>> </option>
+			<ul style = "display:inline-block">
+				<li>Please insert (positive/negative)decimal numbers into the text box as values.</li> 
+				<br>
+				<li>Please use only the second text box for the "~" operator.</li> 
+				<br>
+				<li>The system identifies the input numbers as strings.</li> 
+				<br>
+				<li>To understand what internally happens please visit the wiki or/and analyse the "operator.js" file.</li> 
+			</ul>
 			
-		</select>		
-		<input type = "text" id = "SH_operand_two">
-		=
-		<span id = "SH_result">None</span>
-		
-		<br>
-		<br>
-		<button type = "button" onclick = "shift()">Calculate</button>
-	
-		<br>
-		<br>
-		For more explanation please visit - 
-		<a href = "https://github.com/Incrementis/Javascript-bitwise-operations-with-string-inputs-/wiki"> bitwise operation with string Wiki
+			<br> 
+			
+			
+			<h2>Bitwise arithmetic</h2>
+			
+			<input type = "text" id = "BA_operand_one">		
+			<select id = "BA_operators">
+			
+				<option> ~ </option>
+				<option> & </option>
+				<option> ^ </option>
+				<option> | </option>
+				
+			</select>		
+			<input type = "text" id = "BA_operand_two">
+			=
+			<span id = "BA_result">None</span>
+			
+			<br>
+			<br>
+			<button type = "button" onclick = "bitwise()">Calculate</button>		
+			<br>
+			<br>
+			
+			
+			<h2>Shift</h2>
+			
+			<input type = "text" id = "SH_operand_one">		
+			<select id = "SH_operators">
+			
+				<option> <<  </option>
+				<option> >>  </option>
+				<option> >>> </option>
+				
+			</select>		
+			<input type = "text" id = "SH_operand_two">
+			=
+			<span id = "SH_result">None</span>
+			
+			<br>
+			<br>
+			<button type = "button" onclick = "shift()">Calculate</button>
+			<br>
+			<br>
+			
+			
+			<h2>Interesting examples</h2>
+			<button type = "button" onclick = "example1()"> "2" * 2 </button>
+			<button type = "button" onclick = "example2()"> "8" | 1	</button>
+			
+			<br>
+			<ul style = "display:inline-block">
+				<li id = "ex_one"></li>
+				<li id = "ex_two" ></li>	
+			</ul>
+			
+			
+			<br>
+			<br>
+			For more explanation please visit - 
+			<a href = "https://github.com/Incrementis/Javascript-bitwise-operations-with-string-inputs-/wiki"> bitwise operation with string Wiki
+			
+		</center>
 		
 	</body>
 

@@ -20,10 +20,10 @@ function bitwise()
 	if(operator === "~")
 	{
 		//No second operand needed due to operator
-		second_operand.value = "";
-		
+		first_operand.value = "";
+		second_operand
 		//Bitwise "NOT"
-		result.innerHTML = ~first_operand.value;
+		result.innerHTML = ~second_operand.value;
 		
 	}
 	else if(operator === "&")
@@ -78,4 +78,26 @@ function shift()
 		//Bitwise "ZERO-FILL-RIGHT-SHIFT"
 		result.innerHTML = first_operand.value >>> second_operand.value;
 	}
+}
+
+
+
+//NOTE: There are different ways to realize and optimize the following examples in js.
+//		To split it in two seperate functions should simplify code readability. 
+
+function example1()
+{
+	var result = document.getElementById('ex_one');
+	
+	//result should be 4
+	result.innerHTML = "2" * 2;
+}
+
+
+function example2()
+{
+	var result = document.getElementById('ex_two');
+	
+	//result should be 9
+	result.innerHTML = "8" | 1;
 }
